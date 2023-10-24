@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>your protofolio</title>
+        <style>
+            body{
+                font-family:Arial, sans-serif ;
+                margin: 0;
+                padding: 0;
+                background-color: aliceblue;
+            }
+            header{
+                background-color: #333;
+                color:#fff;
+                text-align:center;
+                padding:2rem 0;
+                position: relative;
+            }
+            .header-content h1{
+                font-size:2.5rem;
+            }
+            .profile-picture{
+                width:100px;
+                height:100px;
+                border-radius:75%;
+                object-fit: cover;
+                position: absolute;
+                top: 55px;
+                left:105px;
+            }
+            nav{
+                background-color: #333;
+                color: #fff;
+                text-align: center;
+            }
+            nav u1{
+                list-style-type: none;
+                padding: 0;
+            }
+            nav u1 li{
+                display: contents ;
+                margin: 100 200px;
+            }
+            nav u1 li a{
+                text-decoration: none;
+                color: #fff;
+                padding: 5rem;
+                margin: 1rem;
+                border-radius: 20px;
+                box-shadow: 0 0 10px reba(0,0,0,0.1);
+            }
+            .download-button{
+                background-color: #333;
+                color: #fff;padding: 0.5rem 1rem;
+                text-decoration: none;
+                border-radius: 20px;
+                display: inline-block;
+                margin-top: 10px;
+            }
+            .download-button:hover{
+                background-color: #555;
+            }
+            footer{
+                text-align: center;
+                padding: 1rem 0;
+                background-color: #333;
+                color: #fff;
+            }
+            u1{
+                list-style-type: disc;
+                padding-left: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="header-content">
+                <img src="selvi.jpg" alt="your profile picture"class="profile-picture">
+                <h1>SELVI K</h1>
+                <p>student</p>
+            </div>
+        </header>
+        <nav>
+            <u1>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">skills</a></li>
+                <li><a href="#education">education</a></li>
+                <li><a href="#contact">contact</a></li>
+                <li><a href="#resume">resume</a></li>
+            </u1>
+        </nav>
+        <section id="about">
+            <div class="section-content">
+                <h2>About Me</h2>
+                <p>hello everyone I am a student of SIVANTHI ADITHANAR college </p>
+            </div>
+        </section>
+        <section id="skills">
+            <div class="section-content">
+                <h2>Skills</h2>
+                <u1>
+                    <li>c</li>
+                    <li>c++</li>
+                    <li>PYTHON</li>
+                </u1>
+            </div>
+        </section>
+        <section id="education">
+            <div class="section-content">
+                <h2>Education</h2>
+                <p>SIVAMTHI ADITHANAR COLLEGE- B.SC.Computer science</p>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="section-content">
+                <h2>Contact</h2>
+                <u1>
+                    <li>Email id: selvikalyanasundar@gmail.com</li>
+                    <li>phone no: 8508381822</li>
+                    <li>insta id: learn_listen123</li>
+                </u1>
+            </div>
+        </section>
+        <section id="resume">
+            <center>
+                <div class="section-content">
+                    <h2>resume</h2>
+                    <a href="resumeselvi.png" class="download-button">Download cv</a>
+                </div>
+            </center>
+        </section>
+        <footer>
+            <p>&copy:2023 SELVI K</p>
+        </footer>
+        <script>
+            document.querySelectorAll('a[herf^="#"]').foreach(anchor=>{
+                anchor.addEventListener('click',function(e){
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement=document.getElementById(targetId);
+                })
+            })
+        </script>
+    </body>
+</html>
